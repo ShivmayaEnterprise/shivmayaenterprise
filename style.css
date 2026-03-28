@@ -23,9 +23,9 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 
-padding: 15px 40px;
+padding: 14px 40px;
 
-background: rgba(255,255,255,0.95);
+background: white;
 
 border-bottom: 1px solid #eee;
 
@@ -43,20 +43,20 @@ gap: 10px;
 
 .logo-img {
 
-height: 40px;
+height: 38px;
 
 }
 
 .logo-text {
 
 font-weight: 600;
-font-size: 18px;
+font-size: 17px;
 
 }
 
 .nav-links a {
 
-margin-left: 25px;
+margin-left: 22px;
 
 text-decoration: none;
 
@@ -112,6 +112,8 @@ rgba(0,0,0,0.55);
 position: relative;
 
 z-index: 2;
+
+padding: 20px;
 
 }
 
@@ -182,32 +184,21 @@ box-shadow:
 
 }
 
-/* ABOUT (NEW PREMIUM SECTION) */
+/* ABOUT */
 
 .about {
 
 padding: 80px 40px;
 
-}
-
-.about-container {
-
-display: grid;
-
-grid-template-columns:
-1fr 1fr;
-
-gap: 40px;
-
-align-items: center;
-
-max-width: 1100px;
+max-width: 900px;
 
 margin: auto;
 
+text-align: center;
+
 }
 
-.about-text h2 {
+.about h2 {
 
 font-size: 32px;
 
@@ -215,21 +206,13 @@ margin-bottom: 20px;
 
 }
 
-.about-text p {
+.about p {
 
 font-size: 17px;
 
 line-height: 1.7;
 
 color: #444;
-
-}
-
-.about-image img {
-
-width: 100%;
-
-border-radius: 18px;
 
 }
 
@@ -240,6 +223,14 @@ border-radius: 18px;
 padding: 80px 40px;
 
 text-align: center;
+
+}
+
+.products h2 {
+
+font-size: 30px;
+
+margin-bottom: 40px;
 
 }
 
@@ -303,6 +294,87 @@ border-radius: 15px;
 
 }
 
+/* ENQUIRY */
+
+.enquiry {
+
+padding: 80px 40px;
+
+text-align: center;
+
+background: #fafafa;
+
+}
+
+.enquiry h2 {
+
+font-size: 30px;
+
+margin-bottom: 10px;
+
+}
+
+.enquiry p {
+
+margin-bottom: 30px;
+
+color: #555;
+
+}
+
+.enquiry form {
+
+max-width: 500px;
+
+margin: auto;
+
+display: flex;
+
+flex-direction: column;
+
+gap: 15px;
+
+}
+
+.enquiry input,
+.enquiry textarea {
+
+padding: 14px;
+
+border-radius: 10px;
+
+border: 1px solid #ddd;
+
+font-size: 15px;
+
+}
+
+.enquiry textarea {
+
+height: 120px;
+
+resize: none;
+
+}
+
+.enquiry button {
+
+padding: 14px;
+
+border: none;
+
+border-radius: 30px;
+
+background: black;
+
+color: white;
+
+font-size: 16px;
+
+cursor: pointer;
+
+}
+
 /* CONTACT */
 
 .contact {
@@ -361,12 +433,6 @@ text-decoration: none;
 /* MOBILE */
 
 @media (max-width:768px) {
-
-.about-container {
-
-grid-template-columns: 1fr;
-
-}
 
 .hero h1 {
 
