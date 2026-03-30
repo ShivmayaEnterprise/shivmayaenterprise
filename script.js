@@ -1,34 +1,41 @@
 console.log("Website Loaded");
-const toggle = document.getElementById("darkToggle");
+/* DARK MODE */
 
-toggle.addEventListener("click", () => {
+const toggle =
+document.getElementById("darkToggle");
+
+toggle.onclick = () => {
 
 document.body.classList.toggle("dark");
 
 if(document.body.classList.contains("dark")){
-toggle.innerText = "☀️";
-} else {
-toggle.innerText = "🌙";
+
+toggle.innerText="☀️";
+
+}else{
+
+toggle.innerText="🌙";
+
 }
 
-});
+};
 
 /* SCROLL REVEAL */
 
-function reveal() {
+function reveal(){
 
-let reveals = document.querySelectorAll(".reveal");
+let reveals =
+document.querySelectorAll(".reveal");
 
-for (let i = 0; i < reveals.length; i++) {
+for(let i=0;i<reveals.length;i++){
 
-let windowHeight = window.innerHeight;
+let windowHeight =
+window.innerHeight;
 
 let elementTop =
 reveals[i].getBoundingClientRect().top;
 
-let elementVisible = 100;
-
-if (elementTop < windowHeight - elementVisible) {
+if(elementTop < windowHeight-100){
 
 reveals[i].classList.add("active");
 
@@ -38,4 +45,30 @@ reveals[i].classList.add("active");
 
 }
 
-window.addEventListener("scroll", reveal);
+window.addEventListener("scroll",reveal);
+
+/* SCROLL FUNCTIONS */
+
+function scrollToMap(){
+
+document
+.querySelector(".map")
+.scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+}
+
+function scrollToChannel(){
+
+document
+.querySelector(".qr-section")
+.scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+}
